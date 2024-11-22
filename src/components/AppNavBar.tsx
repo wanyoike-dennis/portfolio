@@ -13,7 +13,7 @@ export default function NavBar() {
         {/* Logo Section */}
         <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img src={pic} className="h-8" alt="logo" />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+          <span className="text-white self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
             Dennis Njoroge
           </span>
         </Link>
