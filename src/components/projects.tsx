@@ -1,10 +1,10 @@
 export default function ProjectsPage() {
     const projects = [
       {
-        title: "Project Ones",
-        description: "A brief description of Project One, showcasing key features and technologies used.",
+        title: "Android Rick and Morty App",
+        description: "An Android application showcasing characters from the Rick and Morty universe. Built with a modern MVVM architecture, the app integrates:",
         image: "https://via.placeholder.com/600x400?text=Project+One", // Replace with your image URLs
-        link: "#",
+        link: "https://github.com/wanyoike-dennis/RickiMorty",
       },
       {
         title: "Project Twos",
