@@ -11,7 +11,7 @@ export default function NavBar() {
     <nav className="border-gray-200 bg-[#1f1f21] dark:bg-[#1f1f21] dark:border-gray-700">
       <div className="flex flex-wrap items-center justify-between p-4 m-0">
         {/* Logo Section */}
-        <Link to="/home" className="flex items-center space-x-3 rtl:space-x-reverse">
+        <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img src={pic} className="h-8" alt="logo" />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
             Dennis Njoroge
