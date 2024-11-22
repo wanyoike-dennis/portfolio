@@ -1,25 +1,25 @@
 export default function ProjectsPage() {
     const projects = [
       {
-        title: "Project One",
+        title: "Project Ones",
         description: "A brief description of Project One, showcasing key features and technologies used.",
         image: "https://via.placeholder.com/600x400?text=Project+One", // Replace with your image URLs
         link: "#",
       },
       {
-        title: "Project Two",
+        title: "Project Twos",
         description: "Details about Project Two, highlighting the project's goals and outcomes.",
         image: "https://via.placeholder.com/600x400?text=Project+Two", // Replace with your image URLs
         link: "#",
       },
       {
-        title: "Project Three",
+        title: "Project Threes",
         description: "Summary of Project Three, with a focus on the challenges and solutions implemented.",
         image: "https://via.placeholder.com/600x400?text=Project+Three", // Replace with your image URLs
         link: "#",
       },
       {
-        title: "Project Four",
+        title: "Project Fours",
         description: "An overview of Project Four, emphasizing innovative techniques and tools applied.",
         image: "https://via.placeholder.com/600x400?text=Project+Four", // Replace with your image URLs
         link: "#",
