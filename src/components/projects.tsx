@@ -7,20 +7,20 @@ export default function ProjectsPage() {
         link: "https://github.com/wanyoike-dennis/RickiMorty",
       },
       {
-        title: "Project Twos",
-        description: "Details about Project Two, highlighting the project's goals and outcomes.",
+        title: "Harry Porter API",
+        description: "This project is a Harry Potter Universe App that consumes a public API to deliver magical information from the wizarding world. The app provides details about characters, spells, houses, and magical items featured in the Harry Potter series. Designed with a user-friendly interface, it allows fans to explore data interactively, search for their favorite characters, learn about spells, and even test their Hogwarts house knowledge. Built using modern web development technologies, the project showcases seamless integration of RESTful APIs while offering an engaging experience for Harry Potter enthusiasts",
         image: "https://via.placeholder.com/600x400?text=Project+Two", // Replace with your image URLs
         link: "#",
       },
       {
-        title: "Project Threes",
-        description: "Summary of Project Three, with a focus on the challenges and solutions implemented.",
+        title: "AI-powered Chatbot for FAQs",
+        description: "This project creates a chatbot that answers Frequently Asked Questions (FAQs) about a specific topic, such as a website, product, or organization. It uses basic Natural Language Processing (NLP) to understand user queries and retrieve relevant answers.",
         image: "https://via.placeholder.com/600x400?text=Project+Three", // Replace with your image URLs
         link: "#",
       },
       {
-        title: "Project Fours",
-        description: "An overview of Project Four, emphasizing innovative techniques and tools applied.",
+        title: "Dynamic Portfolio Website ",
+        description: "This project is a responsive and interactive portfolio website built using React and TypeScript. It showcases personal achievements, projects, skills, and experiences in a visually appealing and structured way. The website combines modern UI/UX design principles with robust TypeScript typing, ensuring a seamless user experience and high code quality.",
         image: "https://via.placeholder.com/600x400?text=Project+Four", // Replace with your image URLs
         link: "#",
       },
