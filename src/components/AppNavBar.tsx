@@ -16,7 +16,7 @@ export default function NavBar() {
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <img src={pic} className="h-8" alt="logo" />
-          <span className="text-white self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+          <span className="text-[#ffae00] self-center text-2xl font-semibold whitespace-nowrap dark:text-[#ffae00]">
             Dennis Njoroge
           </span>
         </Link>
