@@ -91,7 +91,7 @@ const getRandomProjects = (projects: Project[], numberOfProjects: number): Proje
     </section>
   
         {/* Contact Section */}
-        <section className="py-16 bg-[#2a2a2c] min-h-screen flex flex-col items-center justify-center">
+<section className="py-16 bg-[#2a2a2c] min-h-screen flex flex-col items-center justify-center">
       <div className="max-w-7xl mx-auto px-6 sm:px-12 text-center">
         {/* Section Header */}
         <h2 className="text-4xl font-semibold text-white mb-4">

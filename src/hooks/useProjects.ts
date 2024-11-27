@@ -26,6 +26,5 @@ export default function useProjects() {
     return {
         projects,
         setProjects,
-        getRandomProjects,
     };
 }
