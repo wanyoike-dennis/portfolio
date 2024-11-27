@@ -14,7 +14,7 @@ export const dummyData: Project[] = [
     title: "Dynamic Portfolio Website ",
     description:
       " A responsive portfolio site, crafted with React and TypeScript, presents achievements, projects, skills, and experiences. The design integrates modern UI/UX principles and TypeScript's precision to ensure a smooth user experience and superior code standards.",
-    image: "https://via.placeholder.com/600x400?text=Project+Four",
+    image: "https://github.com/wanyoike-dennis/portfolio/blob/main/src/assets/portf.png",
     link: "#",
   },
   {
