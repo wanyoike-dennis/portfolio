@@ -1,7 +1,25 @@
 import { Link } from 'react-router-dom';
 import pic from '../assets/bac.jpg'
+import { Project } from '../types/projects';
+import { Linkedin, Github, Twitter } from "lucide-react";
 
-export default function HomePage() {
+
+interface ProjectsListProps {
+  projects: Project[]; 
+  
+}
+
+export default function HomePage( 
+  { projects} : ProjectsListProps
+) {
+        // Function to pick a random subset of projects
+const getRandomProjects = (projects: Project[], numberOfProjects: number): Project[] => {
+  const shuffled = [...projects].sort(() => Math.random() - 0.5); // Shuffle the projects array
+  return shuffled.slice(0, numberOfProjects); // Return the first `numberOfProjects` after shuffling
+};
+
+  // Get a random subset of 3 projects
+  const randomProjects = getRandomProjects(projects, 3); // Always display 3 random projects
     return (
       <div className="bg-[#1f1f21] text-white">
         {/* Hero Section with Background Image */}
@@ -43,74 +61,84 @@ export default function HomePage() {
   
         {/* Projects Section */}
         <section className="py-16 bg-[#1f1f21] min-h-screen flex items-center justify-center">
-          <div className="max-w-7xl mx-auto px-6 sm:px-12 text-center">
-            <h2 className="text-3xl font-semibold text-white mb-10">Recent Projects</h2>
-            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              {/* Project Card */}
-              <div className="bg-[#2a2a2c] p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-                <img
-                  src="https://via.placeholder.com/600x400?text=Project+One" // Replace with your actual project image
-                  alt="Project One"
-                  className="w-full h-48 object-cover rounded-md mb-6"
-                />
-                <h3 className="text-xl font-semibold text-white mb-4">Project One</h3>
-                <p className="text-gray-300 mb-6">A brief description of Project One, showcasing the technologies used and the challenges overcome.</p>
-                <a
-                  href="#"
-                  className="text-[#ffae00] hover:text-[#e69e00] font-semibold"
-                >
-                  View Details
-                </a>
-              </div>
-              {/* Project Card */}
-              <div className="bg-[#2a2a2c] p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-                <img
-                  src="https://via.placeholder.com/600x400?text=Project+Two" // Replace with your actual project image
-                  alt="Project Two"
-                  className="w-full h-48 object-cover rounded-md mb-6"
-                />
-                <h3 className="text-xl font-semibold text-white mb-4">Project Two</h3>
-                <p className="text-gray-300 mb-6">Details about Project Two, focusing on its impact and the solutions it offers to real-world problems.</p>
-                <a
-                  href="#"
-                  className="text-[#ffae00] hover:text-[#e69e00] font-semibold"
-                >
-                  View Details
-                </a>
-              </div>
-              {/* Project Card */}
-              <div className="bg-[#2a2a2c] p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-                <img
-                  src="https://via.placeholder.com/600x400?text=Project+Three" // Replace with your actual project image
-                  alt="Project Three"
-                  className="w-full h-48 object-cover rounded-md mb-6"
-                />
-                <h3 className="text-xl font-semibold text-white mb-4">Project Three</h3>
-                <p className="text-gray-300 mb-6">An overview of Project Three, demonstrating its innovative approach and technological advancements.</p>
-                <a
-                  href="#"
-                  className="text-[#ffae00] hover:text-[#e69e00] font-semibold"
-                >
-                  View Details
-                </a>
-              </div>
+      <div className="max-w-7xl mx-auto px-6 sm:px-12 text-center">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {/* Map through projects and render each one */}
+          {randomProjects.map((project) => (
+            <div
+              key={project.id}
+              className="bg-[#2a2a2c] p-6 rounded-lg shadow-lg hover:shadow-xl transition"
+            >
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-48 object-cover rounded-md mb-6"
+              />
+              <h3 className="text-xl font-semibold text-white mb-4">{project.title}</h3>
+              <p className="text-gray-300 mb-6">{project.description}</p>
+              <a
+                href={project.link}
+                className="text-[#ffae00] hover:text-[#e69e00] font-semibold"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Details
+              </a>
             </div>
-          </div>
-        </section>
+          ))}
+        </div>
+      </div>
+    </section>
   
         {/* Contact Section */}
-        <section className="py-16 bg-[#2a2a2c] min-h-screen flex items-center justify-center">
-          <div className="max-w-7xl mx-auto px-6 sm:px-12 text-center">
-            <h2 className="text-3xl font-semibold text-white mb-10">Get In Touch</h2>
-            <p className="text-lg text-gray-300 mb-6">Interested in collaborating or have questions? Feel free to reach out to me!</p>
-            <Link
-              to="/contacts"
-              className="inline-block px-6 py-3 bg-[#ffae00] text-white text-lg rounded-full shadow-lg hover:bg-[#e69e00] transition"
-            >
-              Contact Me
-            </Link>
-          </div>
-        </section>
+        <section className="py-16 bg-[#2a2a2c] min-h-screen flex flex-col items-center justify-center">
+      <div className="max-w-7xl mx-auto px-6 sm:px-12 text-center">
+        {/* Section Header */}
+        <h2 className="text-4xl font-semibold text-white mb-4">
+          Let's Connect!
+        </h2>
+        <p className="text-lg text-gray-300 mb-8">
+          Whether you have a question, idea, or want to collaborate on a project,
+          I'm always open to hearing from you. Don't hesitate to reach out!
+        </p>
+
+        {/* Contact Button */}
+        <Link
+          to="/contacts"
+          className="inline-block px-8 py-4 bg-[#ffae00] text-white text-lg font-semibold rounded-lg shadow-lg hover:bg-[#e69e00] transition duration-300 ease-in-out transform hover:scale-105 mb-6"
+        >
+          Contact Me
+        </Link>
+
+        {/* Social Media Icons */}
+        <div className="flex justify-center space-x-6">
+          <a
+            href="https://www.linkedin.com/in/your-profile"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#ffae00] hover:text-[#e69e00] text-3xl transition duration-300 ease-in-out"
+          >
+            <Linkedin />
+          </a>
+          <a
+            href="https://github.com/your-profile"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#ffae00] hover:text-[#e69e00] text-3xl transition duration-300 ease-in-out"
+          >
+            <Github />
+          </a>
+          <a
+            href="https://twitter.com/your-profile"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#ffae00] hover:text-[#e69e00] text-3xl transition duration-300 ease-in-out"
+          >
+            <Twitter />
+          </a>
+        </div>
+      </div>
+    </section>
       </div>
     );
   }
