@@ -14,7 +14,7 @@ export const dummyData: Project[] = [
     title: "Dynamic Portfolio Website ",
     description:
       " A responsive portfolio site, crafted with React and TypeScript, presents achievements, projects, skills, and experiences. The design integrates modern UI/UX principles and TypeScript's precision to ensure a smooth user experience and superior code standards.",
-    image: "https://github.com/wanyoike-dennis/portfolio/blob/main/src/assets/portf.png",
+    image: "https://via.placeholder.com/600x400?text=Project+Two",
     link: "#",
   },
   {
@@ -31,7 +31,7 @@ export const dummyData: Project[] = [
     title: "Harry Porter API",
     description:
       "An API-based app delivers magical insights from the Harry Potter world, showcasing characters, spells, houses, and items. Its intuitive interface lets users interactively explore data, search favorite characters, and take a Hogwarts house quiz. Powered by modern web technologies, it seamlessly integrates APIs for an immersive fan experience.",
-    image: "https://via.placeholder.com/600x400?text=Project+Two",
+    image: "https://via.placeholder.com/600x400?text=Project+Four",
     link: "#",
   },
 ];
