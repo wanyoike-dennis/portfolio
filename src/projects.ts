@@ -23,7 +23,7 @@ export const dummyData: Project[] = [
     description:
       "A chatbot designed to handle FAQs about topics such as websites, products, or organizations. It applies basic NLP techniques to interpret user queries and deliver accurate, context-aware answers.",
     image: "https://via.placeholder.com/600x400?text=Project+Three",
-    link: "#",
+    link: "https://github.com/wanyoike-dennis/Chatbot",
   },
 
   {
@@ -32,6 +32,6 @@ export const dummyData: Project[] = [
     description:
       "An API-based app delivers magical insights from the Harry Potter world, showcasing characters, spells, houses, and items. Its intuitive interface lets users interactively explore data, search favorite characters, and take a Hogwarts house quiz. Powered by modern web technologies, it seamlessly integrates APIs for an immersive fan experience.",
     image: "https://via.placeholder.com/600x400?text=Project+Four",
-    link: "#",
+    link: "https://github.com/wanyoike-dennis/PorterApi",
   },
 ];
