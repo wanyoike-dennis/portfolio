@@ -135,7 +135,7 @@ export default function HomePage({ projects }: ProjectsListProps) {
           {/* Social Media Icons */}
           <div className="flex justify-center space-x-6">
             <a
-              href="https://www.linkedin.com/in/your-profile"
+              href="https://www.linkedin.com/in/dennis-njoroge-57872b163/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#ffae00] hover:text-[#e69e00] text-3xl transition duration-300 ease-in-out"
@@ -143,7 +143,7 @@ export default function HomePage({ projects }: ProjectsListProps) {
               <Linkedin />
             </a>
             <a
-              href="https://github.com/your-profile"
+              href="https://github.com/wanyoike-dennis"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#ffae00] hover:text-[#e69e00] text-3xl transition duration-300 ease-in-out"
@@ -151,7 +151,7 @@ export default function HomePage({ projects }: ProjectsListProps) {
               <Github />
             </a>
             <a
-              href="https://twitter.com/your-profile"
+              href="https://x.com/kode_me"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#ffae00] hover:text-[#e69e00] text-3xl transition duration-300 ease-in-out"
