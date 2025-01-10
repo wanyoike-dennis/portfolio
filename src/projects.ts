@@ -6,7 +6,7 @@ export const dummyData: Project[] = [
     title: "Android Rick and Morty App",
     description:
       "This Android app features characters from the Rick and Morty universe and employs a modern MVVM architecture for optimal functionality and scalability.",
-    image: "https://private-user-images.githubusercontent.com/43774793/253268390-e5a61f81-cdde-48cb-b995-2c1da7c90d59.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzY0OTM0NzIsIm5iZiI6MTczNjQ5MzE3MiwicGF0aCI6Ii80Mzc3NDc5My8yNTMyNjgzOTAtZTVhNjFmODEtY2RkZS00OGNiLWI5OTUtMmMxZGE3YzkwZDU5LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAxMTAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMTEwVDA3MTI1MlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTJiZTc0NjU5ZTIzMmMzYzNjODQ1ZjMyOGFlZjQ4ZmFmNGQ0MGVhYWNmNTI0NjIzYzBkN2ViNGZhMWEwMmU0NzEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.sqv_CnZOptdNMEIPy02YekiyFDiZ8dtxw_gjekk8kk8",
+    image: "https://via.placeholder.com/600x400?text=Project+One",
     link: "https://github.com/wanyoike-dennis/RickiMorty",
   },
   {
